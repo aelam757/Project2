@@ -27,3 +27,4 @@ CREATE TABLE clients
     interview_rating DECIMAL(10,1),
 	PRIMARY KEY(user_id)
 );
+
