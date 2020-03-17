@@ -57,21 +57,67 @@
     <br>
 
     <!-- Full Container -->
-    <div class="container">
+    <div class="container shadow" id= "mainContainer" style="">
         <div class="jumbotron-fluid">
             <div class="row">
-                <div class="col-md-12  text-center" >
-                    <form>
-                        <div class="form-group">
-                          <label for="companyName" id="titleText"><h2>Input Company Name</h2></label>
-                          <input type="search" class="form-control shadow" id="companyName">
-                        </div>
-                        <button type="submit" class="btn btn-success shadow">Submit</button>
-                      </form>
-                      <br>
+                <div class="col-md-2  text-center" id= "logoBlock" style="background-color: rgb(247, 243, 243)">
+                    Company Logo
+                </div>
+                <div class="col-md-10 text-center" id="ratingsBlock" style="background-color: rgb(247, 243, 243)">
+                    Company Ratings
                 </div>
             </div>
         </div>
+        <br>
+        <div class="jumbotron-fluid">
+            <div class="row">
+                <div class="col-md-12 text-center" id= "companyInfoBlock" style="background-color: rgb(247, 243, 243)">
+                    Company Info
+
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="jumbotron-fluid">
+            <div class="row">
+                <div class="col-md-12 text-center" id= "reviewsBlock" style="background-color: rgb(247, 243, 243)">
+                    Reviews
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="jumbotron-fluid">
+            <div class="row">
+                <div class="col-md-2 text-center" id= "addRatingBlock" style="background-color: white">
+                    Add your rating
+                </div>
+            </div>
+        </div>
+        <div class="jumbotron-fluid" >
+            <div class="row">
+                <div class="col-md-2 text-center" id= "userStarsBlock" style="background-color: white">
+                    <span style="font-size: 15px; color: gold">
+                    <i class="fas fa-star" id="starPos1"></i>
+                    <i class="fas fa-star" id="starPos2"></i>
+                    <i class="fas fa-star" id="starPos3"></i>
+                    <i class="fas fa-star-half-alt" id="starPos4"></i>
+                    <i class="far fa-star" id="starPos5"></i>
+                </span>
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <div class="jumbotron-fluid">
+            <div class="row">
+                <div class="col-md-8" id= "buttonsBlock">
+                    <button type="button" class="btn btn-success shadow">Submit</button>
+                    <button type="button" class="btn btn-success shadow">Edit</button>
+                    <button type="button" class="btn btn-success shadow">Delete</button>
+                </div>
+            </div>
+        </div>
+        
     </div>
     
     <!-- jQuery -->
@@ -83,3 +129,4 @@
 </body>
 
 </html>
+
