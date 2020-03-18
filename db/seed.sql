@@ -1,0 +1,21 @@
+INSERT INTO companies (company_name,rating,benefits,company_url,position,salary) VALUES ('Microsoft');
+INSERT INTO companies (company_name,rating,benefits,company_url,position,salary) VALUES ('Charter Global Inc.');
+INSERT INTO companies (company_name,rating,benefits,company_url,position,salary) VALUES ('Delta');
+INSERT INTO companies (company_name,rating,benefits,company_url,position,salary) VALUES ('UPS');
+INSERT INTO companies (company_name,rating,benefits,company_url,position,salary) VALUES ('The Home Depot');
+INSERT INTO companies (company_name,rating,benefits,company_url,position,salary) VALUES ('Booz Allen Hamilton');
+INSERT INTO companies (company_name,rating,benefits,company_url,position,salary) VALUES ('SunTrust');
+INSERT INTO companies (company_name,rating,benefits,company_url,position,salary) VALUES ('Deloitte');
+INSERT INTO companies (company_name,rating,benefits,company_url,position,salary) VALUES ('Anthem Inc.');
+INSERT INTO companies (company_name,rating,benefits,company_url,position,salary) VALUES ('Comcast');
+INSERT INTO companies (company_name,rating,benefits,company_url,position,salary) VALUES ('The Coca-Cola Company');
+INSERT INTO companies (company_name,rating,benefits,company_url,position,salary) VALUES ('Cox Enterprises');
+INSERT INTO companies (company_name,rating,benefits,company_url,position,salary) VALUES ('PGi');
+INSERT INTO companies (company_name,rating,benefits,company_url,position,salary) VALUES ('Cox Media Group');
+INSERT INTO companies (company_name,rating,benefits,company_url,position,salary) VALUES ('Southern Company');
+INSERT INTO companies (company_name,rating,benefits,company_url,position,salary) VALUES ('First Data');
+INSERT INTO companies (company_name,rating,benefits,company_url,position,salary) VALUES ('NCR');
+INSERT INTO companies (company_name,rating,benefits,company_url,position,salary) VALUES ('WayStar');
+INSERT INTO companies (company_name,rating,benefits,company_url,position,salary) VALUES ('Emory Healthcare');
+INSERT INTO companies (company_name,rating,benefits,company_url,position,salary) VALUES ('Citi');
+
