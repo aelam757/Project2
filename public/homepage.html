@@ -61,11 +61,12 @@
         <div class="jumbotron-fluid">
             <div class="row">
                 <div class="col-md-12  text-center" >
-                    <form>
-                        <div class="form-group">
+                    <form autocomplete="off" action="">
+                        <div class="autocomplete">
                           <label for="companyName" id="titleText"><h2>Input Company Name</h2></label>
-                          <input type="search" class="form-control shadow" id="companyName">
+                          <input type="text" class="form-control shadow" id="companyName" name="myCompanies" placeholder="Company">
                         </div>
+                        <br>
                         <button type="submit" class="btn btn-success shadow">Submit</button>
                       </form>
                       <br>
@@ -85,6 +86,9 @@
     
     <!-- JS Link -->
     <script src="server.js"></script>
+
+    <!-- fronted.js Link -->
+    <script src="./js/frontend.js"></script>
 </body>
 
 </html>
