@@ -1,11 +1,44 @@
 const db = require ("../models");
 
 module.exports = function(app) {
-  //Find all companies and return them to the user with res.json
-  app.get("/api/companies", (req, res) => {
-    db.
+  // GET route for pulling up a company page
+  app.get("/api/companies/:company", (req, res) => {
+    let query = {};
+    db.Post.findOne({
+      where: {
+        company: req.params.company
+      }
+    }).then(function(dbCompany) {
+      console.log(dbCompany);
+      res.json(dbCompany);
+    });
+  });
+  
+  // POST Rating for company
+  app.post("/api/reviews", (req, res) => {
+    db.Post.create(req.body).then(function(dbReview) {
+      res.json(dbReview);
+    });
+  });
+
+  // DELETE Rating for company
+  app.delete("/api/reviews/:id", (req, res) => {
+    db.Post.destroy({
+      where: {
+        id: req.params.id
+      }
+    }).then(function(dbReview) {
+      res.json
+    })
   })
-}
+  
+  
+  
+//   //Find all companies and return them to the user with res.json
+//   app.get("/api/companies", (req, res) => {
+//     db.
+//   })
+// }
 
 
 
