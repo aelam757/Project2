@@ -26,15 +26,15 @@ INSERT INTO companies (company_name,Irating,Grating,Drating,position,salary) VAL
 
 INSERT INTO companies (company_name,Irating,Grating,Drating,position,salary) VALUES ('Cox Media Group', 4, 3.5, 5, 'Software Engineer', '$91k-$126k');
 
-INSERT INTO companies (company_name,Irating,Grating,Drating,position,salary) VALUES ('Southern Company');
+INSERT INTO companies (company_name,Irating,Grating,Drating,position,salary) VALUES ('Southern Company', 4, 4, 5, 'Software Engineer', '$71k-$91k');
 
-INSERT INTO companies (company_name,Irating,Grating,Drating,position,salary) VALUES ('First Data');
+INSERT INTO companies (company_name,Irating,Grating,Drating,position,salary) VALUES ('First Data', 3.5, 3.5, 5, 'Software Engineer','$88k-$109k');
 
-INSERT INTO companies (company_name,Irating,Grating,Drating,position,salary) VALUES ('NCR');
+INSERT INTO companies (company_name,Irating,Grating,Drating,position,salary) VALUES ('NCR', 4, 3.5, 5, 'Software Engineer', '$56k-$129k');
 
-INSERT INTO companies (company_name,Irating,Grating,Drating,position,salary) VALUES ('WayStar');
+INSERT INTO companies (company_name,Irating,Grating,Drating,position,salary) VALUES ('WayStar', 2.5, 3.5, 5, 'Software Engineer', '$77k-$84k');
 
-INSERT INTO companies (company_name,Irating,Grating,Drating,position,salary) VALUES ('Emory Healthcare');
+INSERT INTO companies (company_name,Irating,Grating,Drating,position,salary) VALUES ('Emory Healthcare', 4, 3.5, 5, 'Software Engineer', '$105k-$114k');
 
-INSERT INTO companies (company_name,Irating,Grating,Drating,position,salary) VALUES ('Citi');
+INSERT INTO companies (company_name,Irating,Grating,Drating,position,salary) VALUES ('Citi', 4, 3.5, 5, 'Software Engineer', '$67k-$174k');
 
