@@ -41,3 +41,6 @@ CREATE TABLE positiions
     PRIMARY KEY(company_ID),
     
 );
+=======
+)
+
