@@ -97,7 +97,7 @@ function autocomplete(inp, arr) {
         closeAllLists(e.target);
     });
   }
-  
+  //eventually this array will come from an ajax call to our server / db
   let companiesArray = ["Microsoft", "Charter Global Inc.", "Delta", "UPS", "The Home Depot", "Booz Allen Hamilton", "SunTrust", "Deloitte", "Anthem Inc.", "Comcast", "The Coca-Cola Company", "Cox Enterprises", "PGi", "Cox Media Group", "Soutehrn Company", "First Data", "NCR", "WayStar", "Emory Healthcare", "Citi"]
 
 
