@@ -1,4 +1,4 @@
-DELETE DATABASE IF EXISTS maji_db;
+DROP DATABASE IF EXISTS maji_db;
 
 CREATE DATABASE maji_db;
 
@@ -6,25 +6,30 @@ USE maji_db;
 
 CREATE TABLE companies
 (
-company_id AUTO INCREMENT NOT NULL,
-Company_name VARCHAR(200) NOT NULL,
-Company_industry VARCHAR(200),
-Company_benefits VARCHAR(500),
-Company_url VARCHAR(500),
-Company_rating DECIMAL(10,1),
-Company_position VARCHAR(500),
-Company_salary INT,
+company_name VARCHAR(200) NOT NULL,
+Irating DECIMAL(6,1),
+Grating DECIMAL(6,1),
+Drating DECIMAL(6,1),
+position VARCHAR(20),
+salary INT,
 PRIMARY KEY (company_id)
 );
 
-CREATE TABLE clients
+CREATE TABLE ratings
 (
-	user_id INT NOT NULL AUTO INCREMENT,
+	userId_rating INT NOT NULL AUTO INCREMENT,
     client_name VARCHAR(200) NOT NULL,
-    user_rating DECIMAL(10,1),
-    salary_rating DECIMAL(10,1),
-    benefits_rating DECIMAL(10,1),
-    interview_rating DECIMAL(10,1),
-	PRIMARY KEY(user_id)
+    user_rating DECIMAL(6,1),
+    salary_rating DECIMAL(6,1),
+    benefits_rating DECIMAL(6,1),
+	PRIMARY KEY(userId_rating)
 );
+
+CREATE TABLE benefits
+(
+    insurance VARCHAR(100) NOT NULL,
+    leave VARCHAR(50) NOT NULL,
+    health_well VARCHAR(50) NOT NULL,
+    retirement VARCHAR(25) NOT NULL,
+)
 

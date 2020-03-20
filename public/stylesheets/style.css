@@ -1,8 +1,105 @@
+@media screen and (max-width: 1150px) {
+  body {
+    background-image: url("https://thewallpaper.co//wp-content/uploads/2016/10/free-northern-lights-photo-background-photos-windows-apple-mac-wallpapers-4k-high-definition-free-download-3840x2400.jpg");
+    background-color: #cccccc;
+    background-size:cover;
+    animation: breath 20s linear infinite
+  }
+
+  @keyframes breath {
+    0%   { background-size: 280% auto; }
+    50% { background-size: 300% auto; }
+    100% { background-size: 280% auto; }
+  }
+}
+
+@media screen and (min-width: 1151px) {
+  body {
+    background-image: url("https://thewallpaper.co//wp-content/uploads/2016/10/free-northern-lights-photo-background-photos-windows-apple-mac-wallpapers-4k-high-definition-free-download-3840x2400.jpg");
+    background-color: #cccccc;
+    background-size:cover;
+    animation: breath 20s linear infinite
+  }
+
+  @keyframes breath {
+    0%   { background-size: 100% auto; }
+    50% { background-size: 110% auto; }
+    100% { background-size: 100% auto; }
+  }
+}
+
+/*the container must be positioned relative:*/
+.autocomplete {
+  position: relative;
+}
+
+input {
+  border: 1px solid transparent;
+  background-color: #f1f1f1;
+  padding: 10px;
+  font-size: 16px;
+}
+
+input[type=text] {
+  background-color: #f1f1f1;
+  width: 100%;
+}
+
+input[type=submit] {
+  background-color: DodgerBlue;
+  color: #fff;
+  cursor: pointer;
+}
+
+.autocomplete-items {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  /*position the autocomplete items to be the same width as the container:*/
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+
+.autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff; 
+  border-bottom: 1px solid #d4d4d4; 
+}
+
+/*when hovering an item:*/
+.autocomplete-items div:hover {
+  background-color: #e9e9e9; 
+}
+
+/*when navigating through the items using the arrow keys:*/
+.autocomplete-active {
+  background-color: DodgerBlue !important; 
+  color: #ffffff; 
+}
+/* ----------------------------------- */
+#mainContainer {
+  border: 10px solid white
+}
+
+.navbar {
+  background: linear-gradient(to right, green, black)
+}
+
+.navListing:hover {
+  opacity: .5;
+    transition: opacity .6 ease-out;
+    -moz-transition: opacity .6s ease-out;
+    -webkit-transition: opacity .6s ease-out;
+    -o-transition: opacity .6s ease-out;
+}
+
 form.signup,
 form.login {
   margin-top: 50px;
 }
 
 #titleText {
-  
-}
