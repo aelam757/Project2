@@ -1,4 +1,4 @@
-DELETE DATABASE IF EXISTS maji_db;
+DROP DATABASE IF EXISTS maji_db;
 
 CREATE DATABASE maji_db;
 
@@ -32,3 +32,4 @@ CREATE TABLE benefits
     health_well VARCHAR(50) NOT NULL,
     retirement VARCHAR(25) NOT NULL,
 )
+
