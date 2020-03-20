@@ -62,18 +62,18 @@ INSERT INTO companies (company_name,Irating,Grating,Drating,position,salary) VAL
 ('Anthem Inc.', 3.5, 3, 5, 'Full Stack Developer', '$70-$133k');
 
 INSERT INTO companies (company_name,Irating,Grating,Drating,position,salary) VALUES ('Comcast', 3.5, 3.5 , 5, 'Software Engineer', '$63k-$174k'),
-('Comcast', 3.5, 3.5 , 5, 'Software Engineer(Hr)', '$63k-$174k'),
-('Comcast', 3.5, 3.5 , 5, 'Software Engineer Contract', '$63k-$174k'),
-('Comcast', 3.5, 3.5 , 5, 'Web Developer', '$63k-$174k'),
-('Comcast', 3.5, 3.5 , 5, 'Web Developer Contract', '$63k-$174k'),
-('Comcast', 3.5, 3.5 , 5, 'Full Stack Developer', '$63k-$174k');
+('Comcast', 3.5, 3.5 , 5, 'Software Engineer(Hr)', '$20-$38'),
+('Comcast', 3.5, 3.5 , 5, 'Software Engineer Contract', '$55k-$106k'),
+('Comcast', 3.5, 3.5 , 5, 'Web Developer', '$69k-$102k'),
+('Comcast', 3.5, 3.5 , 5, 'Web Developer Contract', '$100k-$110k'),
+('Comcast', 3.5, 3.5 , 5, 'Full Stack Developer', '$53k-$75k(avg)');
 
 INSERT INTO companies (company_name,Irating,Grating,Drating,position,salary) VALUES ('The Coca-Cola Company', 4, 4, 5, 'Software Engineer', '$97k-$104k'),
-('The Coca-Cola Company', 4, 4, 5, 'Software Engineer(Hr)', '$97k-$104k'),
-('The Coca-Cola Company', 4, 4, 5, 'Software Engineer Contract', '$97k-$104k'),
-('The Coca-Cola Company', 4, 4, 5, 'Web Developer', '$97k-$104k'),
-('The Coca-Cola Company', 4, 4, 5, 'Web Developer Contract', '$97k-$104k'),
-('The Coca-Cola Company', 4, 4, 5, 'Full Stack Developer', '$97k-$104k');
+('The Coca-Cola Company', 4, 4, 5, 'Software Engineer(Hr)', '$66-$71'),
+('The Coca-Cola Company', 4, 4, 5, 'Software Engineer Contract', '$31-$98(hrly avg)'),
+('The Coca-Cola Company', 4, 4, 5, 'Web Developer', '$51k-$95k'),
+('The Coca-Cola Company', 4, 4, 5, 'Web Developer Contract', '$25-$43(hrly avg)'),
+('The Coca-Cola Company', 4, 4, 5, 'Full Stack Developer', '$53k-$75k(avg)');
 
 INSERT INTO companies (company_name,Irating,Grating,Drating,position,salary) VALUES ('Cox Enterprises', 4, 4, 5, 'Software Engineer', '$98k-$116k'),
 ('Cox Enterprises', 4, 4, 5, 'Software Engineer(Hr)', '$98k-$116k'),
