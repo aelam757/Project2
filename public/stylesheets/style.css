@@ -3,13 +3,13 @@
     background-image: url("https://thewallpaper.co//wp-content/uploads/2016/10/free-northern-lights-photo-background-photos-windows-apple-mac-wallpapers-4k-high-definition-free-download-3840x2400.jpg");
     background-color: #cccccc;
     background-size:cover;
-    animation: breath 20s linear infinite
+    animation: breath 20s linear infinite;
   }
 
   @keyframes breath {
-    0%   { background-size: 280% auto; }
-    50% { background-size: 300% auto; }
-    100% { background-size: 280% auto; }
+    0%   { background-size: 300% auto; }
+    50% { background-size: 320% auto; }
+    100% { background-size: 300% auto; }
   }
 }
 
@@ -85,6 +85,7 @@ input[type=submit] {
   border: 10px solid white
 }
 
+
 .navbar {
   background: linear-gradient(to right, green, black)
 }
@@ -122,8 +123,53 @@ border-right: 10px solid white
   }
 }
 
-.sticky-footer {
+#iRatingBlock {
+  border-top: 2px solid white;
+  border-right: 2px solid white
+}
 
+#gRatingBlock {
+  border-top: 2px solid white;
+  border-right:2px solid white
+}
+
+#dRatingBlock {
+  border-top: 2px solid white
+}
+
+#positionBlock {
+  border-bottom: 2px solid white
+}
+
+#salaryBlock {
+  border-bottom: 2px solid white
+}
+
+#benefitsBlock {
+  background: linear-gradient(to right, green, white);
+  border-radius: 5px
+}
+
+#insuranceBlock {
+  border-top: 2px solid white;
+  border-right:2px solid white
+}
+
+#leaveBlock {
+  border-top: 2px solid white;
+  border-right:2px solid white
+}
+
+#healthBlock {
+  border-top: 2px solid white;
+  border-right:2px solid white
+}
+
+#retirementBlock {
+  border-top: 2px solid white
+}
+
+.sticky-footer {
   width: 100%;
   height: 8%;
   background: linear-gradient(to right, green, black);
@@ -135,6 +181,13 @@ border-right: 10px solid white
   border-top: 8px solid lightgrey;
   clear: both;
   margin-top: 185px;
+}
+
+@media screen and (max-width: 800px) {
+  .sticky-footer {
+    display: none
+
+  }
 }
 
 /* Base setup */

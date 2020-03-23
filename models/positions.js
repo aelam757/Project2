@@ -1,5 +1,5 @@
 module.exports = function(sequelize, DataTypes){
-    const Position = sequelize.define("Company", {
+    const Position = sequelize.define("Position", {
         company_ID: {
             type: DataTypes.STRING,
             allowNull: false,

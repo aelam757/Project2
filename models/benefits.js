@@ -1,5 +1,5 @@
-module.exports = function(sequalize,DataTypes){
-    const Benefits = sequelize.define("Company", {
+module.exports = function(sequelize, DataTypes) {
+    const Benefits = sequelize.define("Benefits", {
         company_name:{
             type: DataTypes.STRING,
             allowNull:false,

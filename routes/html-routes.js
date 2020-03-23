@@ -11,6 +11,7 @@ module.exports = function(app) {
 
   app.get("/", (req, res) => {
     res.sendFile(path.join(__dirname, "../public/homepage.html"));
+  });
 
   app.get("/joblisting", (req, res) => {
     res.sendFile(path.join(__dirname, "../public/joblisting.html"))
@@ -20,7 +21,7 @@ module.exports = function(app) {
     res.sendFile(path.join(__dirname, "../public/companyPage.html"))
   });
 
-
+  }
 // Passport Information Kept Below in Comments
 
 // // Requiring our custom middleware for checking if a user is logged in
@@ -50,4 +51,4 @@ module.exports = function(app) {
 //     res.sendFile(path.join(__dirname, "../public/members.html"));
 //   });
 
-// };
+
