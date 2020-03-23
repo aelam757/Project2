@@ -8,10 +8,10 @@ module.exports = function(sequelize, DataTypes){
             }
         },
         position_title : {
-            types: DataTypes.VARCHAR
+            type: DataTypes.TEXT
         },
         salary: {
-            types: DataTypes.INTEGER
+            type: DataTypes.INTEGER
         }
     });
 

@@ -8,16 +8,16 @@ module.exports = function(sequelize, DataTypes) {
             }
         },
         insurance: {
-            type: DataTypes.VARCHAR 
+            type: DataTypes.TEXT 
         },
         leave: {
-            type: DataTypes.VARCHAR
+            type: DataTypes.TEXT
         },
         health_well: {
-            type: DataTypes.VARCHAR
+            type: DataTypes.TEXT
         },
         retirement: {
-            type: DataTypes.VARCHAR
+            type: DataTypes.TEXT
         }
     });
 
