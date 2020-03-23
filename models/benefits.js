@@ -1,5 +1,5 @@
-module.exports = function(sequalize,DataTypes){
-    const Benefits = sequelize.define("Company", {
+module.exports = function(sequelize, DataTypes) {
+    const Benefits = sequelize.define("Benefits", {
         company_name:{
             type: DataTypes.STRING,
             allowNull:false,
@@ -8,16 +8,16 @@ module.exports = function(sequalize,DataTypes){
             }
         },
         insurance: {
-            type: DataTypes.VARCHAR 
+            type: DataTypes.TEXT 
         },
         leave: {
-            type: DataTypes.VARCHAR
+            type: DataTypes.TEXT
         },
         health_well: {
-            type: DataTypes.VARCHAR
+            type: DataTypes.TEXT
         },
         retirement: {
-            type: DataTypes.VARCHAR
+            type: DataTypes.TEXT
         }
     });
 

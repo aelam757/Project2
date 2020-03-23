@@ -8,13 +8,13 @@ module.exports = function(sequelize, DataTypes) {
             }
         },
         user_rating: {
-            types: DataTypes.DECIMAL
+            type: DataTypes.DECIMAL
         },
         salary_rating: {
-            types: DataTypes.DECIMAL
+            type: DataTypes.DECIMAL
         },
         benefits_rating: {
-            types: DataTypes.DECIMAL
+            type: DataTypes.DECIMAL
         }
     });
 
