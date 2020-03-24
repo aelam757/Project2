@@ -1,0 +1,13 @@
+1. Jack - Push html routes and finish them up if necessary
+2. Alan - Using company model as an example, create the benefits and ratings models
+3. Micah - start working on the code to pass the company name from our form on 
+   homepage.html as a URL query parameter to companyPage.html
+   example:
+   let companyName = $(#companyName).val();
+   window.location.replace(`/companyPage.html?myCompany=${companyName}`)
+   //hint - look at express query string examples
+
+
+   SERIOUS CONSIDERATION - 
+   create a "positions" model/table to keep track of open positions at a company
+   -a position record should have a company ID foreign key (ex. Position.belongsTo(db.Company))

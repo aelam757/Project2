@@ -3,13 +3,13 @@
     background-image: url("https://thewallpaper.co//wp-content/uploads/2016/10/free-northern-lights-photo-background-photos-windows-apple-mac-wallpapers-4k-high-definition-free-download-3840x2400.jpg");
     background-color: #cccccc;
     background-size:cover;
-    animation: breath 20s linear infinite
+    animation: breath 20s linear infinite;
   }
 
   @keyframes breath {
-    0%   { background-size: 280% auto; }
-    50% { background-size: 300% auto; }
-    100% { background-size: 280% auto; }
+    0%   { background-size: 300% auto; }
+    50% { background-size: 320% auto; }
+    100% { background-size: 300% auto; }
   }
 }
 
@@ -85,6 +85,7 @@ input[type=submit] {
   border: 10px solid white
 }
 
+
 .navbar {
   background: linear-gradient(to right, green, black)
 }
@@ -103,3 +104,143 @@ form.login {
 }
 
 #titleText {
+  color: white
+}
+
+#logoBlock {
+border-right: 10px solid white
+}
+
+
+#buttonsBlock {
+  /* padding-left: 0;
+  padding-right: 0 */
+}
+
+@media screen and (max-width: 800px) {
+  #buttonsBlock {
+    text-align: center
+  }
+}
+
+#iRatingBlock {
+  border-top: 2px solid white;
+  border-right: 2px solid white
+}
+
+#gRatingBlock {
+  border-top: 2px solid white;
+  border-right:2px solid white
+}
+
+#dRatingBlock {
+  border-top: 2px solid white
+}
+
+#positionBlock {
+  border-bottom: 2px solid white
+}
+
+#salaryBlock {
+  border-bottom: 2px solid white
+}
+
+#benefitsBlock {
+  background: linear-gradient(to right, green, white);
+  border-radius: 5px
+}
+
+#insuranceBlock {
+  border-top: 2px solid white;
+  border-right:2px solid white
+}
+
+#leaveBlock {
+  border-top: 2px solid white;
+  border-right:2px solid white
+}
+
+#healthBlock {
+  border-top: 2px solid white;
+  border-right:2px solid white
+}
+
+#retirementBlock {
+  border-top: 2px solid white
+}
+
+.sticky-footer {
+  width: 100%;
+  height: 8%;
+  background: linear-gradient(to right, green, black);
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  color: white;
+  padding-top: 12px;
+  border-top: 8px solid lightgrey;
+  clear: both;
+  margin-top: 185px;
+}
+
+@media screen and (max-width: 800px) {
+  .sticky-footer {
+    display: none
+
+  }
+}
+
+/* Base setup */
+/* @import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+body {
+    margin: 5%; 
+    text-align: center;
+    background: #111;
+    color: #333; 
+} */
+h1 {
+    font-size: 2em; 
+    margin-bottom: .5rem;
+}
+
+/* Ratings widget */
+.rate {
+    display: inline-block;
+    border: 0;
+}
+/* Hide radio */
+.rate > input {
+    display: none;
+}
+/* Order correctly by floating highest to the right */
+.rate > label {
+    float: right;
+}
+/* The star of the show */
+.rate > label:before {
+    display: inline-block;
+    font-size: 2rem;
+    padding: .3rem .2rem;
+    margin: 0;
+    cursor: pointer;
+    font-family: FontAwesome;
+    content: "\f005 "; /* full star */
+}
+/* Zero stars rating */
+.rate > label:last-child:before {
+    content: "\f006 "; /* empty star outline */
+}
+/* Half star trick */
+.rate .half:before {
+    content: "\f089 "; /* half star no outline */
+    position: absolute;
+    padding-right: 0;
+}
+/* Click + hover color */
+input:checked ~ label, /* color current and previous stars on checked */
+label:hover, label:hover ~ label { color: #73B100;  } /* color previous stars on hover */
+
+/* Hover highlights */
+input:checked + label:hover, input:checked ~ label:hover, /* highlight current and previous stars */
+input:checked ~ label:hover ~ label, /* highlight previous selected stars for new rating */
+label:hover ~ input:checked ~ label /* highlight previous selected stars */ { color: #A6E720; }

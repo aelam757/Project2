@@ -32,7 +32,7 @@ module.exports = function(app) {
     })
   })
   
-  
+};
   
 //   //Find all companies and return them to the user with res.json
 //   app.get("/api/companies", (req, res) => {

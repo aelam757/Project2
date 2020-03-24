@@ -1,9 +1,13 @@
-$(document).ready(function() {
-    let companyLogo = $("");
-    let companyRatings = $("");
 
-}
+// This Express query string should replace the current page with the Reviews page.
+$("#submitButton").click(function (event){
+    event.preventDefault();
+    let company_name = $("#companyName").val();
+    if (!company_name) return;
 
-app.get("/api/allCompanies", function(req, res){
-    
+    //
+    window.location.replace(`/companypage?myCopmanies=${company_name}`);
 });
+
+
+

@@ -22,7 +22,7 @@
     <script src="https://kit.fontawesome.com/61b7e4b328.js" crossorigin="anonymous"></script>
 
     <!-- Personal css -->
-    <link rel="stylesheet" href="../public/stylesheets/style.css"></script>
+    <link rel="stylesheet" href="/stylesheets/style.css"></script>
 
     <title>MAJi</title>
 </head>
@@ -30,9 +30,9 @@
 <body>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-md navbar-light bg-success shadow">
+    <nav class="navbar navbar-expand-md  shadow" id="navbarImg">
         <a class="navbar-brand text-white" id="" href="#">
-            <img src="../assets/magi_transparent.png" width="65" height="50" class="d-inline-block align-top" alt="">
+            <img src="/assets/magi_transparent.png" width="65" height="50" class="d-inline-block align-top" alt="">
             MAJi
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="flase" aria-label="Toggle navigation">
@@ -41,13 +41,13 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item active">
-                <a class="nav-link navListing" href="#" style="color: white">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link navListing" href="/" id="homeNavLink" style="color: white">Home <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link navListing" href="#" style="color: white">Reviews</a>
+                <a class="nav-link navListing" href="companypage" id="companyNavLink" style="color: white">Reviews</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link navListing" href="#" style="color: white">Listings</a>
+                <a class="nav-link navListing" href="/joblisting" id="listingsNavLink" style="color: white">Listings</a>
               </li>
     </nav>
     <br>
@@ -64,16 +64,51 @@
                     Company Name
                 </div>
                 <div class="col-md-10 text-center" id="ratingsBlock" style="background-color: rgb(247, 243, 243)">
-                    Company Ratings
+                    <div class="row">
+                        <div class="col-md-4 text-center" id= "iRatingBlock" style="background-color: rgb(247, 243, 243)">
+                            indeed Rating
+                        </div>
+                        <div class="col-md-4 text-center" id="gRatingBlock" style="background-color: rgb(247, 243, 243)">
+                            Glassdoor Rating
+                        </div>
+                        <div class="col-md-4 text-center" id="dRatingBlock" style="background-color: rgb(247, 243, 243)">
+                              Diversity Rating
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
         <br>
         <div class="jumbotron-fluid">
             <div class="row">
-                <div class="col-md-12 text-center" id= "companyInfoBlock" style="background-color: rgb(247, 243, 243)">
-                    Company Info
-
+                <div class="col-md-12" id= "companyInfoBlock" style="background-color: rgb(247, 243, 243)">
+                    <div class="row">
+                        <div class="col-md-12" id= "positionBlock" style="background-color: rgb(247, 243, 243)">
+                            Job Position
+                        </div>
+                        <div class="col-md-12" id="salaryBlock" style="background-color: rgb(247, 243, 243)">
+                            Salary Range
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center" id= "benefitsBlock" style="background-color: rgb(247, 243, 243)">
+                    <h5>Benefits</h5>
+                    <div class="row">
+                        <div class="col-md-3" id= "insuranceBlock" style="background-color: rgb(247, 243, 243)">
+                            Insurance
+                        </div>
+                        <div class="col-md-3" id="leaveBlock" style="background-color: rgb(247, 243, 243)">
+                            Leave
+                        </div>
+                        <div class="col-md-3" id="healthBlock" style="background-color: rgb(247, 243, 243)">
+                            Health & Wellness
+                        </div>
+                        <div class="col-md-3" id="retirementBlock" style="background-color: rgb(247, 243, 243)">
+                            Retirement
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -131,10 +166,10 @@
 
         
     </div>
-
+    <br>
     <div class="sticky-footer">
         Copyright MAJi &#169;
-        <p><a href="" id="icons8Link" style="color: white"></a></p>
+        <p><a href="" id="stickyFooter" style="color: white"></a></p>
     </div>
     
     <!-- jQuery -->
@@ -142,7 +177,12 @@
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     
     <!-- JS Link -->
-    <script src="server.js"></script>
+    <script>
+        //https://html-online.com/articles/get-url-parameters-javascript/
+        const queryString = window.location.search;
+        console.log("queryString: ", queryString);
+    </script>
+
 </body>
 
 </html>
