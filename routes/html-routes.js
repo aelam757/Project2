@@ -17,7 +17,7 @@ module.exports = function(app) {
     res.sendFile(path.join(__dirname, "../public/joblisting.html"))
   });
 
-  app.get("/companypage", (req, res) => {
+  app.get("/companypage/:company_name", (req, res) => {
     res.sendFile(path.join(__dirname, "../public/companyPage.html"))
   });
 

@@ -2,15 +2,16 @@ const db = require ("../models");
 
 module.exports = function(app) {
   // GET route for pulling up a company page
-  app.get("/api/companies/:company", (req, res) => {
+  app.get("/api/:company", (req, res) => {
     let query = {};
     db.Post.findOne({
       where: {
-        company: req.params.company
+        company_name: req.params.company
       }
     }).then(function(dbCompany) {
       console.log(dbCompany);
       res.json(dbCompany);
+      console.log(res.json(dbCompany));
     });
   });
   

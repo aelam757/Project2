@@ -25,4 +25,3 @@ module.exports = function(sequelize, DataTypes) {
   return Company;
 
 };
->>>>>>> 59b54b865233c824ff485ae91a896d0387389812

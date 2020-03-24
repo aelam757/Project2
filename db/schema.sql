@@ -27,18 +27,17 @@ CREATE TABLE benefits
 (
     company_name VARCHAR(200) NOT NULL,
     insurance VARCHAR(100) NOT NULL,
-    leave VARCHAR(50) NOT NULL,
+    _leave VARCHAR(50) NOT NULL,
     health_well VARCHAR(50) NOT NULL,
     retirement VARCHAR(25) NOT NULL,
     PRIMARY KEY(company_name)
 );
 
-CREATE TABLE positiions
+CREATE TABLE positions
 (
     company_name VARCHAR(200) NOT NULL,
     position_title VARCHAR(20),
     salary INT,
-    PRIMARY KEY(company_ID),
-    
+    PRIMARY KEY(company_ID)    
 );
 
