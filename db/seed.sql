@@ -138,3 +138,4 @@ INSERT INTO companies (company_name,Irating,Grating,Drating,position,salary) VAL
 ('Citi', 4, 3.5, 5, 'Web Developer Contract', '$67k-$174k'),
 ('Citi', 4, 3.5, 5, 'Full Stack Developer', '$67k-$174k');
 
+
