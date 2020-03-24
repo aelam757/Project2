@@ -17,9 +17,12 @@ module.exports = function(sequelize, DataTypes) {
     diversity_rating: {
       type: DataTypes.DECIMAL
     },
+    position : {
+      type: DataTypes.TEXT
+    },
     salary: {
-        type: DataTypes.INTEGER
-      }
+      type: DataTypes.INTEGER
+    }
   });
 
   return Company;
