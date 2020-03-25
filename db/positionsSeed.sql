@@ -1,0 +1,1 @@
+INSERT INTO position (company_name,Irating,Grating,Drating,position,salary) VALUES ('Microsoft', 4, 4, 5,'Software Engineer', '$54k-$123k')

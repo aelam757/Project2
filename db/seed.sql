@@ -1,4 +1,5 @@
-INSERT INTO companies (company_name,Irating,Grating,Drating,position,salary) VALUES ('Microsoft', 4, 4, 5,'Software Engineer', '$54k-$123k'),
+INSERT INTO companies (company_name,Irating,Grating,Drating,position,salary) 
+VALUES ('Microsoft', 4, 4, 5,'Software Engineer', '$54k-$123k'),
 ('Microsoft', 4, 4, 5,'Software Engineer(Hr)', '$26-$40(avg hrly)'),
 ('Microsoft', 4, 4, 5,'Software Engineer Contract', '$31-$98(avg hrly'),
 ('Microsoft', 4, 4, 5,'Web Developer', '$60k-$135k'),

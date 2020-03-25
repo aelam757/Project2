@@ -8,14 +8,14 @@ $("#submitButton").click(function (event) {
     //
     window.location.replace(`/companypage/${company_name}`);
 
-    $.ajax("/api/" + company_name, {
-        type: "GET",
-        data: company_name
-    }).then(
-        function (res) {
-            console.log(res);
-        }
-    );
+    // $.ajax("/api/" + company_name, {
+    //     type: "GET",
+    //     data: company_name
+    // }).then(
+    //     function (res) {
+    //         console.log(res);
+    //     }
+    // );
 });
 
 
