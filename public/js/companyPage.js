@@ -7,24 +7,25 @@ console.log(urlArray[1])
 const company_name = urlArray[1];
 if (company_name) {
 
-    // $.ajax("/api/companies/" + company_name, {
-    //     type: "GET",
-    //     data: company_name
-    // }).then(
-    //     function (res) {
-    //         //res.data will be our company object
+    $.ajax("/api/companies/" + company_name, {
+        type: "GET",
+        data: company_name
+    }).then(
+        function (res) {
+            //res.data will be our company object
+            console.log(res);
+            $("#companyNameBlock").text(res.data.company_name);
+        }
+    );
+
+    // app.get("/api/companies/", (req, res) => {
+    //     companies.findOne({
+    //         where: {
+    //             routeName: req.params.copmanies
+    //         }
+    //     }).then(function(result) {
     //         console.log(res);
     //         $("#companyNameBlock").html(res.data.company_name);
-    //     }
-    // );
-
-    app.get("/api/companies/", (req, res) => {
-        companies.findOne({
-            where: {
-                routeName: req.params.copmanies
-            }
-        }).then(function(result) {
-            return res.json(result);
-        });
-    })
+    //     });
+    // })
 }

@@ -7,6 +7,8 @@ USE maji_db;
 CREATE TABLE companies
 (
     company_name VARCHAR(200) NOT NULL,
+    -- companyID INTEGER AUTO_INCREMENT,
+    -- PRIMARY KEY(companyID),
     Irating DECIMAL(6,1),
     Grating DECIMAL(6,1),
     Drating DECIMAL(6,1),
