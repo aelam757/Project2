@@ -82,12 +82,15 @@ input[type=submit] {
 }
 /* ----------------------------------- */
 #mainContainer {
-  border: 10px solid white
+  border: 10px solid black;
+  background: rgba(0, 0, 0, 0.801);
+
 }
 
 
 .navbar {
-  background: linear-gradient(to right, green, black)
+  background: linear-gradient(to right, green, black);
+  border: 
 }
 
 .navListing:hover {
@@ -98,6 +101,7 @@ input[type=submit] {
     -o-transition: opacity .6s ease-out;
 }
 
+
 form.signup,
 form.login {
   margin-top: 50px;
@@ -107,9 +111,10 @@ form.login {
   color: white
 }
 
-#logoBlock {
-border-right: 10px solid white
+#companyNameBlock {
+border-right: 10px solid black
 }
+
 
 
 #buttonsBlock {
@@ -123,50 +128,62 @@ border-right: 10px solid white
   }
 }
 
+#labelBlock {
+  color: white;
+  background-color: black
+}
+
+
 #iRatingBlock {
-  border-top: 2px solid white;
-  border-right: 2px solid white
+  background: linear-gradient(to right, green, white);
+  border-top: 2px solid black;
+  border-right: 2px solid black;
+  font-weight: bold
 }
 
 #gRatingBlock {
-  border-top: 2px solid white;
-  border-right:2px solid white
+  background: linear-gradient(to right, white, green, white);
+  border-top: 2px solid black;
+  border-right:2px solid black;
+  font-weight: bold
 }
 
 #dRatingBlock {
-  border-top: 2px solid white
+  background: linear-gradient(to right, white, green);
+  border-top: 2px solid black;
+  font-weight: bold
 }
 
 #positionBlock {
-  border-bottom: 2px solid white
+  border-bottom: 2px solid black
 }
 
 #salaryBlock {
-  border-bottom: 2px solid white
+  border-bottom: 2px solid black;
+  font-weight: bold
 }
 
 #benefitsBlock {
-  background: linear-gradient(to right, green, white);
-  border-radius: 5px
+  background: linear-gradient(to right, black, green, white);
 }
 
 #insuranceBlock {
-  border-top: 2px solid white;
-  border-right:2px solid white
+  border-top: 2px solid black;
+  border-right:2px solid black
 }
 
 #leaveBlock {
-  border-top: 2px solid white;
-  border-right:2px solid white
+  border-top: 2px solid black;
+  border-right:2px solid black
 }
 
 #healthBlock {
-  border-top: 2px solid white;
-  border-right:2px solid white
+  border-top: 2px solid black;
+  border-right:2px solid black
 }
 
 #retirementBlock {
-  border-top: 2px solid white
+  border-top: 2px solid black
 }
 
 .sticky-footer {
