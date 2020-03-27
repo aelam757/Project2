@@ -7,18 +7,18 @@ USE maji_db;
 CREATE TABLE companies
 (
     company_name VARCHAR(200) NOT NULL,
-    id INTEGER AUTO_INCREMENT,
-    PRIMARY KEY(id),
     Irating DECIMAL(6,1),
     Grating DECIMAL(6,1),
     Drating DECIMAL(6,1),
-    position VARCHAR(100),
-    salary VARCHAR(200)
-    
+    position VARCHAR(20),
+    salary INT,
+    PRIMARY KEY (company_name)
 );
 
 
+
 CREATE TABLE reviews
+
 (
 	userId VARCHAR(200) NOT NULL,
     company_name VARCHAR (200) NOT NULL,
@@ -27,6 +27,7 @@ CREATE TABLE reviews
     user_review VARCHAR(500),
 	PRIMARY KEY(userId)
 );
+
 
 -- CREATE TABLE benefits
 -- (
@@ -37,4 +38,3 @@ CREATE TABLE reviews
 --     retirement VARCHAR(25) NOT NULL,
 --     PRIMARY KEY(company_name)
 -- );
-
