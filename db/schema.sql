@@ -7,12 +7,13 @@ USE maji_db;
 CREATE TABLE companies
 (
     company_name VARCHAR(200) NOT NULL,
+    id INT AUTO_INCREMENT,
     Irating DECIMAL(6,1),
     Grating DECIMAL(6,1),
     Drating DECIMAL(6,1),
     position VARCHAR(20),
-    salary INT,
-    PRIMARY KEY (company_name)
+    salary VARCHAR (500),
+    PRIMARY KEY (id)
 );
 
 
