@@ -15,13 +15,14 @@ CREATE TABLE companies
     PRIMARY KEY (company_name)
 );
 
-CREATE TABLE ratings
+
+
+CREATE TABLE reviews
+
 (
 	userId VARCHAR(200) NOT NULL,
-    -- client_name VARCHAR(200) NOT NULL,
     user_rating DECIMAL(6,1),
-    salary_rating DECIMAL(6,1),
-    benefits_rating DECIMAL(6,1),
+    user_review VARCHAR(500),
 	PRIMARY KEY(userId)
 );
 
@@ -33,13 +34,5 @@ CREATE TABLE benefits
     health_well VARCHAR(50) NOT NULL,
     retirement VARCHAR(25) NOT NULL,
     PRIMARY KEY(company_name)
-);
-
-CREATE TABLE positions
-(
-    company_name VARCHAR(200) NOT NULL,
-    position_title VARCHAR(20),
-    salary INT,
-    PRIMARY KEY(company_ID)    
 );
 
