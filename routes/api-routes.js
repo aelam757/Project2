@@ -4,7 +4,7 @@ module.exports = function(app) {
   // GET route for pulling up a company page
   app.get("/api/companies/:company", (req, res) => {
     console.log("made it to/api/companies")
-    db.Company.findOne({
+    db.Company.findAll({
       where: {
         company_name: req.params.company.trim()
       }
