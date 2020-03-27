@@ -1,4 +1,5 @@
-INSERT INTO companies (company_name,Irating,Grating,Drating,position,salary) VALUES ('Microsoft', 4, 4, 5,'Software Engineer', '$54k-$123k'),
+INSERT INTO companies (company_name,Irating,Grating,Drating,position,salary) 
+VALUES ('Microsoft', 4, 4, 5,'Software Engineer', '$54k-$123k'),
 ('Microsoft', 4, 4, 5,'Software Engineer(Hr)', '$26-$40(avg hrly)'),
 ('Microsoft', 4, 4, 5,'Software Engineer Contract', '$31-$98(avg hrly'),
 ('Microsoft', 4, 4, 5,'Web Developer', '$60k-$135k'),
@@ -76,66 +77,105 @@ INSERT INTO companies (company_name,Irating,Grating,Drating,position,salary) VAL
 ('The Coca-Cola Company', 4, 4, 5, 'Full Stack Developer', '$53k-$75k(avg)');
 
 INSERT INTO companies (company_name,Irating,Grating,Drating,position,salary) VALUES ('Cox Enterprises', 4, 4, 5, 'Software Engineer', '$98k-$116k'),
-('Cox Enterprises', 4, 4, 5, 'Software Engineer(Hr)', '$98k-$116k'),
-('Cox Enterprises', 4, 4, 5, 'Software Engineer Contract', '$98k-$116k'),
-('Cox Enterprises', 4, 4, 5, 'Web Developer', '$98k-$116k'),
-('Cox Enterprises', 4, 4, 5, 'Web Developer Contract', '$98k-$116k'),
-('Cox Enterprises', 4, 4, 5, 'Full Stack Developer', '$98k-$116k');
+('Cox Enterprises', 4, 4, 5, 'Software Engineer(Hr)', '$26-$40(hrly avg)'),
+('Cox Enterprises', 4, 4, 5, 'Software Engineer Contract', '$31-$98(hrly avg)'),
+('Cox Enterprises', 4, 4, 5, 'Web Developer', '$51k-$95k'),
+('Cox Enterprises', 4, 4, 5, 'Web Developer Contract', '$25-$43(hrly avg)'),
+('Cox Enterprises', 4, 4, 5, 'Full Stack Developer', '$53k-$75k(avg)');
 
 INSERT INTO companies (company_name,Irating,Grating,Drating,position,salary) VALUES ('PGi', 3.5, 3, 5, 'Software Engineer', '$93k-$143k'),
-('PGi', 3.5, 3, 5, 'Software Engineer(Hr)', '$93k-$143k'),
-('PGi', 3.5, 3, 5, 'Software Engineer Contract', '$93k-$143k'),
-('PGi', 3.5, 3, 5, 'Web Developer', '$93k-$143k'),
-('PGi', 3.5, 3, 5, 'Web Developer Contract', '$93k-$143k'),
-('PGi', 3.5, 3, 5, 'Full Stack Developer', '$93k-$143k');
+('PGi', 3.5, 3, 5, 'Software Engineer(Hr)', '$$26-$40(hrly avg)'),
+('PGi', 3.5, 3, 5, 'Software Engineer Contract', '$31-$98(hrly avg)'),
+('PGi', 3.5, 3, 5, 'Web Developer', '$69k-$74k'),
+('PGi', 3.5, 3, 5, 'Web Developer Contract', '$25-$43(hrly avg)'),
+('PGi', 3.5, 3, 5, 'Full Stack Developer', '$53k-$75k(avg)');
 
 INSERT INTO companies (company_name,Irating,Grating,Drating,position,salary) VALUES ('Cox Media Group', 4, 3.5, 5, 'Software Engineer', '$91k-$126k'),
-('Cox Media Group', 4, 3.5, 5, 'Software Engineer(Hr)', '$91k-$126k'),
-('Cox Media Group', 4, 3.5, 5, 'Software Engineer Contract', '$91k-$126k'),
-('Cox Media Group', 4, 3.5, 5, 'Web Developer', '$91k-$126k'),
-('Cox Media Group', 4, 3.5, 5, 'Web Developer Contract', '$91k-$126k'),
-('Cox Media Group', 4, 3.5, 5, 'Full Stack Developer', '$91k-$126k');
+('Cox Media Group', 4, 3.5, 5, 'Software Engineer(Hr)', '$26-$40(hrly avg)'),
+('Cox Media Group', 4, 3.5, 5, 'Software Engineer Contract', '$31-$98(hrly avg)'),
+('Cox Media Group', 4, 3.5, 5, 'Web Developer', '$77k-$89k'),
+('Cox Media Group', 4, 3.5, 5, 'Web Developer Contract', '$25-$43(hrly avg)'),
+('Cox Media Group', 4, 3.5, 5, 'Full Stack Developer', '$53k-$75k(avg)');
 
 INSERT INTO companies (company_name,Irating,Grating,Drating,position,salary) VALUES ('Southern Company', 4, 4, 5, 'Software Engineer', '$71k-$91k'),
-('Southern Company', 4, 4, 5, 'Software Engineer(Hr)', '$71k-$91k'),
-('Southern Company', 4, 4, 5, 'Software Engineer Contract', '$71k-$91k'),
-('Southern Company', 4, 4, 5, 'Web Developer', '$71k-$91k'),
-('Southern Company', 4, 4, 5, 'Web Developer Contract', '$71k-$91k'),
-('Southern Company', 4, 4, 5, 'Full Stack Developer', '$71k-$91k');
+('Southern Company', 4, 4, 5, 'Software Engineer(Hr)', '$23-$26'),
+('Southern Company', 4, 4, 5, 'Software Engineer Contract', '$31-$98(hrly avg)'),
+('Southern Company', 4, 4, 5, 'Web Developer', '$51k-$95k'),
+('Southern Company', 4, 4, 5, 'Web Developer Contract', '$25-$43(hrly avg)'),
+('Southern Company', 4, 4, 5, 'Full Stack Developer', '$53k-$75k(avg)');
 
 INSERT INTO companies (company_name,Irating,Grating,Drating,position,salary) VALUES ('First Data', 3.5, 3.5, 5, 'Software Engineer','$88k-$109k'),
-('First Data', 3.5, 3.5, 5, 'Software Engineer(Hr)','$88k-$109k'),
-('First Data', 3.5, 3.5, 5, 'Software Engineer Contract','$88k-$109k'),
-('First Data', 3.5, 3.5, 5, 'Web Developer','$88k-$109k'),
-('First Data', 3.5, 3.5, 5, 'Web Developer Contract','$88k-$109k'),
-('First Data', 3.5, 3.5, 5, 'Full Stack Developer','$88k-$109k');
+('First Data', 3.5, 3.5, 5, 'Software Engineer(Hr)','$20-$69'),
+('First Data', 3.5, 3.5, 5, 'Software Engineer Contract','$31-$98(hrly avg)'),
+('First Data', 3.5, 3.5, 5, 'Web Developer','$69k-$99k'),
+('First Data', 3.5, 3.5, 5, 'Web Developer Contract','$25-$43(hrly avg)'),
+('First Data', 3.5, 3.5, 5, 'Full Stack Developer','$53k-$75k(avg)');
 
 INSERT INTO companies (company_name,Irating,Grating,Drating,position,salary) VALUES ('NCR', 4, 3.5, 5, 'Software Engineer', '$56k-$129k'),
-('NCR', 4, 3.5, 5, 'Software Engineer(Hr)', '$56k-$129k'),
-('NCR', 4, 3.5, 5, 'Software Engineer Contract', '$56k-$129k'),
-('NCR', 4, 3.5, 5, 'Web Developer', '$56k-$129k'),
-('NCR', 4, 3.5, 5, 'Web Developer Contract', '$56k-$129k'),
-('NCR', 4, 3.5, 5, 'Full Stack Developer', '$56k-$129k');
+('NCR', 4, 3.5, 5, 'Software Engineer(Hr)', '$25-$58'),
+('NCR', 4, 3.5, 5, 'Software Engineer Contract', '$31-$98(hrly avg)'),
+('NCR', 4, 3.5, 5, 'Web Developer', '$64k-$71k'),
+('NCR', 4, 3.5, 5, 'Web Developer Contract', '$26-$29'),
+('NCR', 4, 3.5, 5, 'Full Stack Developer', '$53k-$75k(avg)');
 
 INSERT INTO companies (company_name,Irating,Grating,Drating,position,salary) VALUES ('WayStar', 2.5, 3.5, 5, 'Software Engineer', '$77k-$84k'),
-('WayStar', 2.5, 3.5, 5, 'Software Engineer(Hr)', '$77k-$84k'),
-('WayStar', 2.5, 3.5, 5, 'Software Engineer Contract', '$77k-$84k'),
-('WayStar', 2.5, 3.5, 5, 'Web Developer', '$77k-$84k'),
-('WayStar', 2.5, 3.5, 5, 'Web Developer Contract', '$77k-$84k'),
-('WayStar', 2.5, 3.5, 5, 'Full Stack Developer', '$77k-$84k');
+('WayStar', 2.5, 3.5, 5, 'Software Engineer(Hr)', '$26-$40(hrly avg)'),
+('WayStar', 2.5, 3.5, 5, 'Software Engineer Contract', '$31-$98(hrly avg)'),
+('WayStar', 2.5, 3.5, 5, 'Web Developer', '$51k-$95k'),
+('WayStar', 2.5, 3.5, 5, 'Web Developer Contract', '$25-$43(hrly avg)'),
+('WayStar', 2.5, 3.5, 5, 'Full Stack Developer', '$53k-$75k(avg)');
 
 INSERT INTO companies (company_name,Irating,Grating,Drating,position,salary) VALUES ('Emory Healthcare', 4, 3.5, 5, 'Software Engineer', '$105k-$114k'),
-('Emory Healthcare', 4, 3.5, 5, 'Software Engineer(Hr)', '$105k-$114k'),
-('Emory Healthcare', 4, 3.5, 5, 'Software Engineer Contract', '$105k-$114k'),
-('Emory Healthcare', 4, 3.5, 5, 'Web Developer', '$105k-$114k'),
-('Emory Healthcare', 4, 3.5, 5, 'Web Developer Contract', '$105k-$114k'),
-('Emory Healthcare', 4, 3.5, 5, 'Full Stack Developer', '$105k-$114k');
+('Emory Healthcare', 4, 3.5, 5, 'Software Engineer(Hr)', '$26-$40(hrly avg)'),
+('Emory Healthcare', 4, 3.5, 5, 'Software Engineer Contract', '$31-$98(hrly avg)'),
+('Emory Healthcare', 4, 3.5, 5, 'Web Developer', '$51k-$95k'),
+('Emory Healthcare', 4, 3.5, 5, 'Web Developer Contract', '$25-$43(hrly avg)'),
+('Emory Healthcare', 4, 3.5, 5, 'Full Stack Developer', '$53k-$75k(avg)');
 
 INSERT INTO companies (company_name,Irating,Grating,Drating,position,salary) VALUES ('Citi', 4, 3.5, 5, 'Software Engineer', '$67k-$174k'),
-('Citi', 4, 3.5, 5, 'Software Engineer(Hr)', '$67k-$174k'),
-('Citi', 4, 3.5, 5, 'Software Engineer Contract', '$67k-$174k'),
-('Citi', 4, 3.5, 5, 'Web Developer', '$67k-$174k'),
-('Citi', 4, 3.5, 5, 'Web Developer Contract', '$67k-$174k'),
-('Citi', 4, 3.5, 5, 'Full Stack Developer', '$67k-$174k');
+('Citi', 4, 3.5, 5, 'Software Engineer(Hr)', '$36-$100'),
+('Citi', 4, 3.5, 5, 'Software Engineer Contract', '$91k-$207k'),
+('Citi', 4, 3.5, 5, 'Web Developer', '$46k-$163k'),
+('Citi', 4, 3.5, 5, 'Web Developer Contract', '$117k-$128k'),
+('Citi', 4, 3.5, 5, 'Full Stack Developer', '$66k-$94k');
 
 
+-- INSERT INTO benefits (company_name,insurance,leave,health_well,retirement) VALUES ('Micosoft','Dental'|'Health'| 'Vision'|'Life', 'Parental Leave'|'Paid Time Off'|'Sick Time Off', 'Fitness Class', '401K');
+
+-- INSERT INTO benefits (company_name,insurance,leave,health_well,retirement) VALUES ('Charter Global Inc.', 'Dental'|'Health'| 'Vision'|'Life', 'Paid Time Off'|'Sick Time Off', 'On-site Gym'|'Child Care', '401k');
+
+-- INSERT INTO benefits (company_name,insurance,leave,health_well,retirement) VALUES ('Delta', 'Dental'|'Health'| 'Vision'|'Life', 'Parental Leave'|'Paid Time Off'|'Sick Time Off'| 'Military Leave', 'On-site Gym', '401k');
+
+-- INSERT INTO benefits (company_name,insurance,leave,health_well,retirement) VALUES ('UPS','Dental'|'Health'| 'Vision'|'Life'|'AD&D Insurance', 'Parental Leave'|'Paid Time Off'|'Sick Time Off'| 'Family', 'Gym Membership'|'Child Care'|'Wellness Program', "401k" ); 
+
+-- INSERT INTO benefits (company_name,insurance,leave,health_well,retirement) VALUES ('Home Depot','Dental'|'Health'| 'Vision'|'Life'|'Pet', 'Parental Leave'|'Paid Time Off'|'Sick Time Off'| 'Bereavement', 'Gym Membership'|'Child care'|'On-site Gym'|'Flu Shot', '401k');
+
+-- INSERT INTO benefits (company_name,insurance,leave,health_well,retirement) VALUES ('Booz Allen Hamilton', 'Dental'|'Health'| 'Vision'|'Life', 'Paid Time Off'|'Sick Time Off'| 'Military Leave', 'Wellness Program', '401k');
+
+-- INSERT INTO benefits (company_name,insurance,leave,health_well,retirement) VALUES ('SunTrust', 'Dental'|'Health'| 'Vision'|'Life', 'Paid Time Off'|'Sick Time Off','Wellness Program', '401k');
+
+-- INSERT INTO benefits (company_name,insurance,leave,health_well,retirement) VALUES ('Deloitte', 'Dental'|'Health'| 'Vision'|'Life'|'Pet', 'Parental Leave'|'Paid Time Off'|'Sick Time Off'| 'Family','N/A','401k');
+
+-- INSERT INTO benefits (company_name,insurance,leave,health_well,retirement) VALUES ('Anthem Inc.', 'Dental'|'Health'| 'Vision'|'Life','Paid Time Off'|'Sick Time Off'|'Paid Holidays','On-site Gym'|'Gym Membership', '401k'|'Pension Plan'|'Retirement Plan'|'Charitable Match');
+
+-- INSERT INTO benefits (company_name,insurance,leave,health_well,retirement) VALUES ();
+
+-- INSERT INTO benefits (company_name,insurance,leave,health_well,retirement) VALUES ();
+
+-- INSERT INTO benefits (company_name,insurance,leave,health_well,retirement) VALUES ();
+
+-- INSERT INTO benefits (company_name,insurance,leave,health_well,retirement) VALUES ();
+
+-- INSERT INTO benefits (company_name,insurance,leave,health_well,retirement) VALUES ();
+
+-- INSERT INTO benefits (company_name,insurance,leave,health_well,retirement) VALUES ();
+
+-- INSERT INTO benefits (company_name,insurance,leave,health_well,retirement) VALUES ();
+
+-- INSERT INTO benefits (company_name,insurance,leave,health_well,retirement) VALUES ();
+
+-- INSERT INTO benefits (company_name,insurance,leave,health_well,retirement) VALUES ();
+
+-- INSERT INTO benefits (company_name,insurance,leave,health_well,retirement) VALUES ();
+
+-- INSERT INTO benefits (company_name,insurance,leave,health_well,retirement) VALUES ();

@@ -35,7 +35,6 @@ CREATE TABLE benefits
     PRIMARY KEY(company_name)
 );
 
-<<<<<<< HEAD
 CREATE TABLE positions
 (
     company_name VARCHAR(200) NOT NULL,
@@ -44,5 +43,3 @@ CREATE TABLE positions
     PRIMARY KEY(company_ID)    
 );
 
-=======
->>>>>>> bafec0e0a0a21e23408184df8a2a58f5421adc2d

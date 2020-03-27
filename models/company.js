@@ -8,21 +8,22 @@ module.exports = function(sequelize, DataTypes) {
         len: [1, 200]
       }
     },
-    indeed_rating: {
+    
+    Irating: {
       type: DataTypes.DECIMAL
     },
-    glassdoor_rating: {
+    Grating: {
       type: DataTypes.DECIMAL
     },
-    diversity_rating: {
+    Drating: {
       type: DataTypes.DECIMAL
     },
     position : {
       type: DataTypes.TEXT
     },
     salary: {
-      type: DataTypes.INTEGER
-    }
+      type: DataTypes.TEXT
+    },
   });
 
   return Company;

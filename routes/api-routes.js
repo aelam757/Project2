@@ -1,17 +1,20 @@
 const db = require ("../models");
-
+const Sequelize = require("sequelize");
 module.exports = function(app) {
   // GET route for pulling up a company page
-  app.get("/api/:company", (req, res) => {
-    let query = {};
-    db.Post.findOne({
+  app.get("/api/companies/:company", (req, res) => {
+    console.log("made it to/api/companies")
+    db.Company.findOne({
       where: {
-        company_name: req.params.company
+        company_name: req.params.company.trim()
       }
+    
     }).then(function(dbCompany) {
-      console.log(dbCompany);
+      console.log(dbCompany + "HELLLOOOOOOOOOOOOOOOOOOO!!!");
       res.json(dbCompany);
-      console.log(res.json(dbCompany));
+    }).catch(function(err) {
+      console.log(err);
+      res.json(err);
     });
   });
   
