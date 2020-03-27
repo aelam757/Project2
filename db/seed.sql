@@ -140,6 +140,13 @@ INSERT INTO companies (company_name,Irating,Grating,Drating,position,salary) VAL
 ('Citi', 4, 3.5, 5, 'Full Stack Developer', '$66k-$94k');
 
 
+
+INSERT INTO reviews (company_name, title, user_rating, user_review) VALUES ("Microsoft", "I have Spoken", 5, "Microsoft is da best!!");
+
+
+
+
+
 -- INSERT INTO benefits (company_name,insurance,leave,health_well,retirement) VALUES ('Micosoft','Dental'|'Health'| 'Vision'|'Life', 'Parental Leave'|'Paid Time Off'|'Sick Time Off', 'Fitness Class', '401K');
 
 -- INSERT INTO benefits (company_name,insurance,leave,health_well,retirement) VALUES ('Charter Global Inc.', 'Dental'|'Health'| 'Vision'|'Life', 'Paid Time Off'|'Sick Time Off', 'On-site Gym'|'Child Care', '401k');
