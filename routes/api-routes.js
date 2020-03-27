@@ -18,10 +18,25 @@ module.exports = function(app) {
     });
   });
   
-  // POST Rating for company
+  //Post Reviews for a Company
   app.post("/api/reviews", (req, res) => {
-    db.Post.create(req.body).then(function(dbReview) {
-      res.json(dbReview);
+    db.Reviews.create(req.body).then(function(dbReviews) {
+      res.json(dbReviews);
+    });
+  });
+
+
+  // Get Reviews for a Company
+  app.get("/api/getreviews", (req, res) => {
+    let query = {};
+    if (req.query.company_name) {
+      query.company_name = req.query.company_name;
+    }
+    
+    db.Reviews.findAll({
+      where: query
+    }).then(function(dbReviews) {
+      res.json(dbReviews);
     });
   });
 
