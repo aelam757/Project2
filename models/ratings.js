@@ -1,6 +1,6 @@
 module.exports = function(sequelize, DataTypes) {
-    const Ratings = sequelize.define("Ratings", {
-        userID: {
+    const Ratings = sequelize.define("Reviews", {
+        id: {
             type: DataTypes.STRING,
             allowNull: false, 
             validate: {
