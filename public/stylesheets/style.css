@@ -87,10 +87,12 @@ input[type=submit] {
 
 }
 
+.extra-space {
+  margin-bottom: 60px;
+}
 
 .navbar {
   background: linear-gradient(to right, green, black);
-  border: 
 }
 
 .navListing:hover {
