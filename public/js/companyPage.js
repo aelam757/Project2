@@ -40,25 +40,33 @@ if (company_name) {
 };
 $("#submitButton").click(function (event) {
     event.preventDefault();
+    var reviewBody = $("#reviewsBlock").val();
+    var titleName = "New Review";
+    var starRating = 4;
+
     console.log("Button has been clicked...")
-    if (!reviewText.val().trim()) {
+    if (reviewBody === "") {
         return;
     };
 
+
     let newReview = {
-        title: titleName.val().trim(),
-        user_review: reviewBody.val().trim(),
-        company_name: company_name
+        company_name: company_name,
+        title: titleName,
+        user_rating: starRating,
+        user_review: reviewBody
     };
 
+    console.log(newReview);
+
     function submitReview(review) {
-        $.post("api/reviews", review, function () {
+        $.post("../api/reviews", review, function () {
             window.location.href = "/companypage/" + company_name;
             console.log("Review has been posted!")
         });
     };
 
-    // NEED TO ADD INFORMATION ON STAR REVIEW
+    // // NEED TO ADD INFORMATION ON STAR REVIEW
 
     submitReview(newReview);
 });
