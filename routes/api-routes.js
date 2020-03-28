@@ -4,13 +4,13 @@ module.exports = function(app) {
   // GET route for pulling up a company page
   app.get("/api/companies/:company", (req, res) => {
     console.log("made it to/api/companies")
-    db.Company.findAll({
+    db.Company.findOne({
       where: {
         company_name: req.params.company.trim()
       }
     
     }).then(function(dbCompany) {
-      console.log(dbCompany + "HELLLOOOOOOOOOOOOOOOOOOO!!!");
+      console.log(dbCompany);
       res.json(dbCompany);
     }).catch(function(err) {
       console.log(err);
@@ -18,38 +18,45 @@ module.exports = function(app) {
     });
   });
   
-  //Post Reviews for a Company
-  app.post("/api/reviews", (req, res) => {
-    db.Reviews.create(req.body).then(function(dbReviews) {
-      res.json(dbReviews);
-    });
-  });
-
-
-  // Get Reviews for a Company
-  app.get("/api/getreviews", (req, res) => {
-    let query = {};
-    if (req.query.company_name) {
-      query.company_name = req.query.company_name;
-    }
-    
+  // Get Reviews for a Company ASYNC
+  app.get("/api/getreviews/:company", (req, res) => {
     db.Reviews.findAll({
-      where: query
-    }).then(function(dbReviews) {
-      res.json(dbReviews);
-    });
-  });
-
-  // DELETE Rating for company
-  app.delete("/api/reviews/:id", (req, res) => {
-    db.Post.destroy({
       where: {
-        id: req.params.id
+        company_name: req.params.company.trim()
       }
     }).then(function(dbReview) {
-      res.json
+      console.log(dbReview);
+      res.json(dbReview);
+    }).catch(function(err) {
+      console.log(err);
+      res.json(err);
     })
-  })
+  });
+    
+  //Post Reviews for a Company
+  // app.post("/api/reviews", (req, res) => {
+  //   db.Reviews.create(req.body).then(function(dbReviews) {
+  //     res.json(dbReviews);
+  //   });
+  // });  
+  //   db.Reviews.findAll({
+  //     where: query
+  //   }).then(function(dbReviews) {
+  //     res.json(dbReviews);
+  //   });
+  //   console.log("We have the reviews ready!")
+
+
+  // // DELETE Rating for company
+  // app.delete("/api/reviews/:id", (req, res) => {
+  //   db.Post.destroy({
+  //     where: {
+  //       id: req.params.id
+  //     }
+  //   }).then(function(dbReview) {
+  //     res.json
+  //   })
+  // })
   
 };
   

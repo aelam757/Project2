@@ -21,12 +21,12 @@ CREATE TABLE companies
 CREATE TABLE reviews
 
 (
-	userId VARCHAR(200) NOT NULL,
+	id int AUTO_INCREMENT,
     company_name VARCHAR (200) NOT NULL,
     title VARCHAR (200) NOT NULL,
     user_rating DECIMAL(6,1),
     user_review VARCHAR(500),
-	PRIMARY KEY(userId)
+	PRIMARY KEY(id)
 );
 
 
