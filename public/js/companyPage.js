@@ -23,7 +23,7 @@ if (company_name) {
             $("#salaryBlock").text("Salary Range " + res.salary);
 
             function getReviews(company) {
-                $.ajax("/api/getreviews", {
+                $.ajax("/api/getreviews/" + company, {
                     type: "GET",
                     data: company,
                 }).then(
@@ -40,6 +40,7 @@ if (company_name) {
 };
 $("#submitButton").click(function (event) {
     event.preventDefault();
+    console.log("Button has been clicked...")
     if (!reviewText.val().trim()) {
         return;
     };
@@ -53,6 +54,7 @@ $("#submitButton").click(function (event) {
     function submitReview(review) {
         $.post("api/reviews", review, function () {
             window.location.href = "/companypage/" + company_name;
+            console.log("Review has been posted!")
         });
     };
 
@@ -60,6 +62,8 @@ $("#submitButton").click(function (event) {
 
     submitReview(newReview);
 });
+
+
 
 // $("#editButton").click(function (event) {
 //     event.preventDefault();
