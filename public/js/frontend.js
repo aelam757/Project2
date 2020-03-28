@@ -98,12 +98,9 @@ function autocomplete(inp, arr) {
     });
   }
   //eventually this array will come from an ajax call to our server / db
-  let companiesArray = ["Microsoft", "Charter Global Inc.", "Delta", "UPS", "The Home Depot", "Booz Allen Hamilton", "SunTrust", "Deloitte", "Anthem Inc.", "Comcast", "The Coca-Cola Company", "Cox Enterprises", "PGi", "Cox Media Group", "Soutehrn Company", "First Data", "NCR", "WayStar", "Emory Healthcare", "Citi"]
+  let companiesArray = ["Microsoft", "Charter Global Inc.", "Delta", "UPS", "The Home Depot", "Booz Allen Hamilton", "SunTrust", "Deloitte", "Anthem Inc.", "Comcast", "The Coca-Cola Company", "Cox Enterprises", "PGi", "Cox Media Group", "Southern Company", "First Data", "NCR", "WayStar", "Emory Healthcare", "Citi"];
 
 
 /*initiate the autocomplete function on the "myInput" element, and pass along the companiesArray as possible autocomplete values:*/
 autocomplete(document.getElementById("companyName"), companiesArray);
-
-
-
 
