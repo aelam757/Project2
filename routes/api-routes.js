@@ -44,6 +44,16 @@ module.exports = function(app) {
       res.json(dbReviews);
     });
   });
+
+    // Post new Company Name to DB
+    app.post("/api/newCompany", (req, res) => {
+      db.Company.create({
+        company_name: req.body.company_name,
+      }).then(function(dbCompany) {
+        res.json(dbCompany);
+        console.log("We've got a new company!");
+      });
+    });
 };
 
 

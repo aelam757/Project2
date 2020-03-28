@@ -101,6 +101,10 @@ input[type=submit] {
     -o-transition: opacity .6s ease-out;
 }
 
+.review {
+  color: whitesmoke;
+  margin-top: 15px;
+}
 
 form.signup,
 form.login {
