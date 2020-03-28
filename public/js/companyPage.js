@@ -23,6 +23,15 @@ if (company_name) {
             $("#positionBlock").text(res.position);
             $("#salaryBlock").text("Salary Range " + res.salary);
 
+            // function getStarRating(company){
+            // $.ajax("/api/getStarRating/" + company,{
+            //     type: 'GET',
+            //     data: starRating,
+            //     beforeSend: function(){
+            //         $(".rate").html()
+            //     }
+            // })
+
             function getReviews(company) {
                 $.ajax("/api/getreviews/" + company, {
                     type: "GET",
@@ -71,8 +80,13 @@ if (company_name) {
 
 
 
+
 $("#submitButton").click(function (event) {
     event.preventDefault();
+
+    let reviewBody = $("#reviewsBlock").val();
+    let titleName = "New Review";
+    let starRating = $(".rate").val();
     var reviewBody = $("#reviewsBlock").val();
     var titleName = "New Review";
     var starRating = 4;
@@ -128,6 +142,10 @@ $("#submitButton").click(function (event) {
     console.log(newReview);
 
     function submitReview(review) {
+        $.post("../api/reviews", starRating, function(){
+            window.location.href = "/companypage/" + company_name;
+            console.log("starRating worked!")
+        });
         $.post("../api/reviews", review, function () {
             window.location.href = "/companypage/" + company_name;
             console.log("Review has been posted!")
