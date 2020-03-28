@@ -3,12 +3,7 @@ module.exports = function(sequelize, DataTypes) {
   const Company = sequelize.define("Company", {
     company_name: {
       type: DataTypes.STRING,
-      allowNull: false,
-      validate: {
-        len: [1, 200]
-      }
     },
-    
     Irating: {
       type: DataTypes.DECIMAL
     },
