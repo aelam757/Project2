@@ -11,7 +11,7 @@ CREATE TABLE companies
     Irating DECIMAL(6,1),
     Grating DECIMAL(6,1),
     Drating DECIMAL(6,1),
-    position VARCHAR(20),
+    position VARCHAR(200),
     salary VARCHAR (500),
     PRIMARY KEY (id)
 );
