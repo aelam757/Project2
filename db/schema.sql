@@ -21,12 +21,7 @@ CREATE TABLE companies
 CREATE TABLE reviews
 
 (
-<<<<<<< HEAD
-    id INT AUTO_INCREMENT,
-	userId VARCHAR(200) NOT NULL,
-=======
 	id int AUTO_INCREMENT,
->>>>>>> 85a9c95913211015507e6544dd7ded34f38e9c5d
     company_name VARCHAR (200) NOT NULL,
     title VARCHAR (200) NOT NULL,
     user_rating DECIMAL(6,1),
