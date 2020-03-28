@@ -23,6 +23,15 @@ if (company_name) {
             $("#positionBlock").text(res.position);
             $("#salaryBlock").text("Salary Range " + res.salary);
 
+            // function getStarRating(company){
+            // $.ajax("/api/getStarRating/" + company,{
+            //     type: 'GET',
+            //     data: starRating,
+            //     beforeSend: function(){
+            //         $(".rate").html()
+            //     }
+            // })
+
             function getReviews(company) {
                 $.ajax("/api/getreviews/" + company, {
                     type: "GET",
@@ -71,51 +80,12 @@ if (company_name) {
 
 
 
+
 $("#submitButton").click(function (event) {
     event.preventDefault();
-    var reviewBody = $("#reviewsBlock").val();
-    var titleName = "New Review";
-    var starRating = "";
-
-    function checkRating() {
-        if ($("#rating10").checked === true) {
-            starRating = 5;
-        }
-        else if ($("#rating9").checked === true) {
-            starRating = 4.5;
-        }
-        else if ($("#rating8").checked === true) {
-            starRating = 4;
-        }
-        else if ($("#rating7").checked === true) {
-            starRating = 3.5;
-        }
-        else if ($("#rating6").checked === true) {
-            starRating = 3;
-        }
-        else if ($("#rating5").checked === true) {
-            starRating = 2.5;
-        }
-        else if ($("#rating4").checked === true) {
-            starRating = 2;
-        }
-        else if ($("#rating3").checked === true) {
-            starRating = 1.5;
-        }
-        else if ($("#rating2").checked === true) {
-            starRating = 1;
-        }
-        else if ($("#rating1").checked === true) {
-            starRating = 0.5;
-        }
-        return starRating;
-    };
-    checkRating();
-    console.log(starRating);
-    console.log("Button has been clicked...")
-    if (reviewBody === "") {
-        return;
-    };
+    let reviewBody = $("#reviewsBlock").val();
+    let titleName = "New Review";
+    let starRating = $(".rate").val();
 
 
     let newReview = {
@@ -128,6 +98,10 @@ $("#submitButton").click(function (event) {
     console.log(newReview);
 
     function submitReview(review) {
+        $.post("../api/reviews", starRating, function(){
+            window.location.href = "/companypage/" + company_name;
+            console.log("starRating worked!")
+        });
         $.post("../api/reviews", review, function () {
             window.location.href = "/companypage/" + company_name;
             console.log("Review has been posted!")
