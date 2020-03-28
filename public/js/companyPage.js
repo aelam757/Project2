@@ -75,42 +75,42 @@ $("#submitButton").click(function (event) {
     event.preventDefault();
     var reviewBody = $("#reviewsBlock").val();
     var titleName = "New Review";
-    var starRating = "";
+    var starRating = 4;
 
-    function checkRating() {
-        if ($("#rating10").checked === true) {
-            starRating = 5;
-        }
-        else if ($("#rating9").checked === true) {
-            starRating = 4.5;
-        }
-        else if ($("#rating8").checked === true) {
-            starRating = 4;
-        }
-        else if ($("#rating7").checked === true) {
-            starRating = 3.5;
-        }
-        else if ($("#rating6").checked === true) {
-            starRating = 3;
-        }
-        else if ($("#rating5").checked === true) {
-            starRating = 2.5;
-        }
-        else if ($("#rating4").checked === true) {
-            starRating = 2;
-        }
-        else if ($("#rating3").checked === true) {
-            starRating = 1.5;
-        }
-        else if ($("#rating2").checked === true) {
-            starRating = 1;
-        }
-        else if ($("#rating1").checked === true) {
-            starRating = 0.5;
-        }
-        return starRating;
-    };
-    checkRating();
+    // function checkRating() {
+    //     if ($("#rating10").checked === true) {
+    //         starRating = 5;
+    //     }
+    //     else if ($("#rating9").checked === true) {
+    //         starRating = 4.5;
+    //     }
+    //     else if ($("#rating8").checked === true) {
+    //         starRating = 4;
+    //     }
+    //     else if ($("#rating7").checked === true) {
+    //         starRating = 3.5;
+    //     }
+    //     else if ($("#rating6").checked === true) {
+    //         starRating = 3;
+    //     }
+    //     else if ($("#rating5").checked === true) {
+    //         starRating = 2.5;
+    //     }
+    //     else if ($("#rating4").checked === true) {
+    //         starRating = 2;
+    //     }
+    //     else if ($("#rating3").checked === true) {
+    //         starRating = 1.5;
+    //     }
+    //     else if ($("#rating2").checked === true) {
+    //         starRating = 1;
+    //     }
+    //     else if ($("#rating1").checked === true) {
+    //         starRating = 0.5;
+    //     }
+    //     return starRating;
+    // };
+    // checkRating();
     console.log(starRating);
     console.log("Button has been clicked...")
     if (reviewBody === "") {
