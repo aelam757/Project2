@@ -18,7 +18,7 @@ module.exports = function(app) {
     });
   });
   
-  // Get Reviews for a Company ASYNC
+  // Get Reviews for a Company
   app.get("/api/getreviews/:company", (req, res) => {
     db.Reviews.findAll({
       where: {
@@ -33,12 +33,21 @@ module.exports = function(app) {
     })
   });
     
-  //Post Reviews for a Company
-  // app.post("/api/reviews", (req, res) => {
-  //   db.Reviews.create(req.body).then(function(dbReviews) {
-  //     res.json(dbReviews);
-  //   });
-  // });  
+  // Post Reviews for a Company
+  app.post("/api/reviews", (req, res) => {
+    db.Reviews.create({
+      company_name: req.body.company_name,
+      title: req.body.title,
+      user_rating: req.body.user_rating,
+      user_review: req.body.user_review
+    }).then(function(dbReviews) {
+      res.json(dbReviews);
+    });
+  });
+};
+
+
+
   //   db.Reviews.findAll({
   //     where: query
   //   }).then(function(dbReviews) {
@@ -58,7 +67,6 @@ module.exports = function(app) {
   //   })
   // })
   
-};
   
 //   //Find all companies and return them to the user with res.json
 //   app.get("/api/companies", (req, res) => {
